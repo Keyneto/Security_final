@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create new user</title>
+</head>
+<body>
+<form method="POST" action="/admin/create_new_user">
+        <label for="username">Enter name:</label>
+        <input name="username" type="text" id="username"/>
+    <br>
+        <label for="email">Enter email:</label>
+        <input name="email" type="text" id="email"/>
+    <br>
+        <label for="password">Enter password:</label>
+        <input name="password" type="text" id="password"/>
+    <br>
+        <label for="role">Enter password:</label>
+        <input name="role" type="text" id="role"/>
+    <br>
+    <input type="submit" value="Add user">
+</form>
+<br>
+<a th:href="@{/logout}">Logout</a>
+</body>
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<html lang="en">-->
+
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Create new user</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<form th:method="POST" th:action="@{/admin}" th:object="${user}">-->
+<!--    <label for="firstName">Enter name:</label>-->
+<!--    <input type="text" th:field="*{userName}" id="firstName"/>-->
+<!--    <br>-->
+<!--    <label for="email">Enter email:</label>-->
+<!--    <input type="text" th:field="*{email}" id="email"/>-->
+<!--    <br>-->
+<!--    <label for="email">Enter password:</label>-->
+<!--    <input type="text" th:field="*{password}" id="password"/>-->
+<!--    <br>-->
+<!--    <input type="submit" value="Add user">-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
