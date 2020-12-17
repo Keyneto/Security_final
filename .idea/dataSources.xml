@@ -10,5 +10,14 @@
         <property name="serverTimezone" value="UTC" />
       </driver-properties>
     </data-source>
+    <data-source source="LOCAL" name="storeage@localhost [2]" uuid="012fddda-8c10-4013-81a7-51c5a9bab663">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3307/storeage</jdbc-url>
+      <driver-properties>
+        <property name="serverTimezone" value="UTC+5" />
+      </driver-properties>
+    </data-source>
   </component>
 </project>
